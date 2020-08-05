@@ -259,7 +259,7 @@ class BreakoutEngine(gym.Env):
     # API methods: Gym API methods + our `layout` method
     ###########################################################################
 
-    def _render(self, mode='human', close=False):
+    def render(self, mode='human', close=False):
         if self.reset_has_never_been_called:
             raise ResetHasNeverBeenCalledError
 
@@ -272,7 +272,7 @@ class BreakoutEngine(gym.Env):
 
             self.viewer.imshow(self._get_image())"""
 
-    def _reset(self):
+    def reset(self):
         """
         Resets the bricks and ball to start a new game.
 
@@ -329,7 +329,7 @@ class BreakoutEngine(gym.Env):
 
         return state
 
-    def _step(self, action):
+    def step(self, action):
         """
         Parameters
         ----------
