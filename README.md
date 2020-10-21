@@ -1,3 +1,5 @@
+## My personal fork of the environment for my own research purposes
+
 ## Python 3 version of [Breakout game](https://github.com/vicariousinc/schema-games)
 You may then play games in interactive mode:
 
